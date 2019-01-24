@@ -1,0 +1,61 @@
+<div class = "container">
+    <h1>RxRenewal OTC Cross border drugs</h1>
+    <form>
+       
+
+       <div class = "form-group">
+        <label for = "counryName">Select Country Name</label>
+       <select name="profile" ngModel>
+        <option *ngFor="let prf of allProfiles" [ngValue]="prf">
+            {{ prf.counryName }}
+        </option>
+        </select> 
+     </div>
+     
+     <div class = "form-group">
+            <label for = "DrugName">DrugName</label>
+            <input type = "text" class = "form-control" id = "DrugName"
+               [(ngModel)] = "drugName" name = "DrugName">
+     </div>
+
+     <div class = "form-group">
+            <label for = "Allergies">Allergies</label>
+            <input type = "checkbox" class = "form-control" id = "Allergies"
+               [(ngModel)] = "allergies" name = "Allergies">
+     </div>
+
+     <div class = "form-group">
+            <label for = "Age">Kids(Age-12)</label>
+            <input type = "checkbox" class = "form-control" id = "Age"
+               [(ngModel)] = "agerestriction" name = "Age">
+     </div>
+
+     <div class = "form-group">
+            <label for = "Pregenency">Pregenency</label>
+            <input type = "checkbox" class = "form-control" id = "Pregenency"
+               [(ngModel)] = "pregenency" name = "Pregenency">
+     </div>
+
+     <div class = "form-group">
+            <button type="submit">Match Drug</button>
+     </div>
+
+       <!-- <div class = "form-group">
+          <label for = "countryID">countryID</label>
+          <input type = "text" class = "form-control" id = "countryID"
+             [(ngModel)] = "model.countryID" name = "countryID">
+       </div>
+
+       <div class = "form-group">
+        <label for = "countryCode">countryCode</label>
+        <input type = "text" class = "form-control" id = "countryCode" required
+           [(ngModel)] = "model.countryCode" name = "countryCode">
+        </div>
+
+       <div class = "form-group">
+        <label for = "counryName">counryName</label>
+        <input type = "text" class = "form-control" id = "counryName"
+           [(ngModel)] = "model.counryName" name = "counryName">
+     </div> -->
+    </form>
+ </div>
